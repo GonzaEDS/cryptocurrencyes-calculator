@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <section class="coins-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Logo</th>
+                    <th>Name</th>
+                    <th>Current price</th>
+                    <th>ATH</th>
+                    <th>ATH change percentage</th>
+                    <th>Circulating Supply</th>
+                    <th>Market cap rank</th>
+                </tr>
+            </thead>
+            <tbody class="table-body">
+
+            </tbody>
+
+        </table>
+    </section>
+    <section class="calculator displayNone">
+        <svg class="arrowSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="45.513px" height="45.512px" viewBox="0 0 45.513 45.512" style="enable-background:new 0 0 45.513 45.512;" xml:space="preserve">
+            <g>
+                <path d="M44.275,19.739L30.211,5.675c-0.909-0.909-2.275-1.18-3.463-0.687c-1.188,0.493-1.959,1.654-1.956,2.938l0.015,5.903   l-21.64,0.054C1.414,13.887-0.004,15.312,0,17.065l0.028,11.522c0.002,0.842,0.338,1.648,0.935,2.242s1.405,0.927,2.247,0.925   l21.64-0.054l0.014,5.899c0.004,1.286,0.781,2.442,1.971,2.931c1.189,0.487,2.557,0.21,3.46-0.703L44.29,25.694   C45.926,24.043,45.92,21.381,44.275,19.739z"/>
+            </g>
+        </svg>
+        <div class="calculatorContainer">
+           
+            <h1 class="selectedCoin"></h1>
+            <img class="coinLogo" src="" alt="">
+            <input class="coinInput" type="number" step="0.01">
+
+            <h1 class="usdTitle">USD</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 235.517 235.517" style="enable-background:new 0 0 235.517 235.517;" xml:space="preserve">
+                <g>
+                    <path style="fill:#116824;" d="M118.1,235.517c7.898,0,14.31-6.032,14.31-13.483c0-7.441,0-13.473,0-13.473   c39.069-3.579,64.932-24.215,64.932-57.785v-0.549c0-34.119-22.012-49.8-65.758-59.977V58.334c6.298,1.539,12.82,3.72,19.194,6.549   c10.258,4.547,22.724,1.697,28.952-8.485c6.233-10.176,2.866-24.47-8.681-29.654c-11.498-5.156-24.117-8.708-38.095-10.236V8.251   c0-4.552-6.402-8.251-14.305-8.251c-7.903,0-14.31,3.514-14.31,7.832c0,4.335,0,7.843,0,7.843   c-42.104,3.03-65.764,25.591-65.764,58.057v0.555c0,34.114,22.561,49.256,66.862,59.427v33.021   c-10.628-1.713-21.033-5.243-31.623-10.65c-11.281-5.755-25.101-3.72-31.938,6.385c-6.842,10.1-4.079,24.449,7.294,30.029   c16.709,8.208,35.593,13.57,54.614,15.518v13.755C103.79,229.36,110.197,235.517,118.1,235.517z M131.301,138.12   c14.316,4.123,18.438,8.257,18.438,15.681v0.555c0,7.979-5.776,12.651-18.438,14.033V138.12z M86.999,70.153v-0.549   c0-7.152,5.232-12.657,18.71-13.755v29.719C90.856,81.439,86.999,77.305,86.999,70.153z"/>
+                </g>
+            </svg>
+            <p class="result">00</p>
+
+        </div>
+    </section>
+    <div class="coins-list">
+    </div>
+    
+</body>
+</html>
