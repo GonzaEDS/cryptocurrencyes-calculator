@@ -4,16 +4,10 @@ body {
     background: linear-gradient(90deg, black, rgb(10, 0, 45));
 
 }
-.coins-table {
-    overflow-x: auto;
-}
 
-.coins-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
+
+table {
+    margin: 0 auto;
 }
 
 section {
@@ -35,9 +29,8 @@ section {
 
 }
 .coins-table {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow-x: auto;
+
 }
 
 table {
