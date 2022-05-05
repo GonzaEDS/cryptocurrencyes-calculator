@@ -1,12 +1,3 @@
-// fetch(
-//   "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
-// )
-//   .then(resp => resp.json())
-//   .then(data => {
-//     const coinsData = data
-//     console.log(coinsData)
-//   })
-
 const currencyMarketList = async () => {
   try {
     const response = await fetch(
@@ -61,7 +52,7 @@ const currencyMarketList = async () => {
             userInput.addEventListener(evento, () => {
               document.querySelector('.result').innerHTML = `$ ${(
                 coinPrice * userInput.value
-              ).toFixed(5)}`
+              ).toFixed(4)}`
             })
           )
           document.querySelector('.arrowSvg').addEventListener('click', () => {
@@ -72,8 +63,8 @@ const currencyMarketList = async () => {
           })
         })
       })
-    } else if (response.status === 401) {
-      console.log('incorrect key')
+    } else if (response.status === 404) {
+      console.log('The requested data was not found')
     }
   } catch (error) {
     console.log(error)
@@ -81,5 +72,3 @@ const currencyMarketList = async () => {
 }
 
 currencyMarketList()
-
-// console.log(datos[0].image)
